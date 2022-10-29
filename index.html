@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Таймер Помидоро</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="pomodoro_body">
+
+    <div id="container">
+
+        <div id="header">
+            <h1>Pomodoro Timer</h1>
+        </div>
+
+        <div id="content">
+
+            <div id="instruction">
+                <button class="instruction"><img class="icon" src="media/instruction.png"></button>
+            </div>
+
+            <div id="timer">
+                <div class="main-container center">
+                    <div class="circle-container center">
+                        <div class="semicircle"></div>
+                        <div class="semicircle"></div>
+                        <div class="semicircle"></div>
+                        <div class="outermost_circle"></div>
+                    </div>
+
+                    <div class="timer-container center">
+                        <div class="timer center"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="settings">
+                <button class="settings"><img class="icon" src="media/settings.png"></button>
+            </div>
+
+            <div id="timer_buttons">
+                <button id="restart"><img class="timer_button" src="media/restart.png"></button>
+                <button id="start" ><img class="timer_button" src="media/play.png"></button>
+                <button id="forward"><img class="timer_button" src="media/forward.png"></button>
+            </div>
+
+        </div>
+
+        <div id="footer"></div>
+
+    </div>
+    <script src='pomodoro.js'></script>
+    <script src='progress.js'></script>
+
+</body>
+
+</html>
